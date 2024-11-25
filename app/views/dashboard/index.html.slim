@@ -1,0 +1,254 @@
+- content_for :head
+    script[src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"]
+    link[rel="preconnect" href="https://fonts.googleapis.com"]
+    link[rel="preconnect" href="https://fonts.gstatic.com" crossorigin]
+    link[href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet"]
+    link[href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet"]
+    link[rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"]
+    link[rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"]
+
+body
+  .container
+    .part1
+      .time-div
+        span
+          i.fa-solid.fa-clock
+        span.time
+
+      .date-div
+        span
+          i.fa-solid.fa-calendar-days
+        span.date
+
+      .temperature-div
+        span
+          i.fa-solid.fa-temperature-low
+        span#outdoor_temperature
+          | 21° C
+
+      .humidity-div
+        span
+          i.fa-solid.fa-droplet
+        span#humidity
+          | 80%
+
+      .location-div
+        span
+          i.fa-solid.fa-location-dot
+        span
+          i.fi.fi-ar
+        span
+          | New York
+      .phone-icons-div
+        .satellite-div
+          span
+            i.fa-solid.fa-satellite
+        .gsm-signal-div
+          span
+            i.fa-solid.fa-signal
+        .battery-phone-div
+          span
+            i.fa-solid.fa-battery-full
+          span
+            | 100%
+    .part2
+      .signal-left
+        i.fa-solid.fa-circle-arrow-left
+      .direction
+        .div1
+          span.span1
+            i.fa-solid.fa-diamond-turn-right
+          br
+          span.span2
+            | 204 m
+        .div2
+          span.span1
+            | Turn left
+          hr
+          span.span2
+            | Castleton Ave
+      .signal-right
+        i.fa-solid.fa-circle-arrow-right
+    .part3
+      .tachometer
+        .tachometer-numbers
+          .tachometer-item.first
+            | 0
+          .tachometer-item.second
+            | 01
+          .tachometer-item.third
+            | 02
+          .tachometer-item.fourh
+            | 03
+          .tachometer-item.fifth
+            | 04
+          .tachometer-item.sixth
+            | 05
+          .tachometer-item.seventh
+            | 06
+          .tachometer-item.eighth
+            | 07
+          .tachometer-item.ninth
+            | 08
+          .tachometer-item.red.tenth
+            | 09
+          .tachometer-item.red.eleventh
+            | 10
+        .tachometer-pointer
+          .tachometer-pointer-border
+          .tachometer-pointer-box
+        .tachometer-icons
+          span.oil-icon
+            i.fa-solid.fa-oil-can
+          span.door-icon
+            i.fa-solid.fa-door-open
+          span.triangle-icon
+            i.fa-solid.fa-triangle-exclamation
+          span.key-icon
+            i.fa-solid.fa-key
+      .middle
+        div
+          .middle-top
+            span#velocity.number
+              | 0
+            br
+            span.km-h
+              | Km/h
+          .middle-bottom
+            .left-line
+            div
+              .gas-div.text-success
+                div
+                  span.gas-icon
+                    i.fa-solid.fa-gas-pump
+                div
+                  span#fuel_remaining
+                    | 9 L
+                  br
+                  span#fuel_percentage
+                    | 12%
+            .center-line
+              div
+                span[style="color: rgba(255, 255, 255, 0.055)"]
+                  | |
+              div
+                span[style="color: rgba(255, 255, 255, 0.151)"]
+                  | |
+              div
+                span[style="color: rgba(255, 255, 255, 0.452)"]
+                  | |
+              div
+                span.vehicle-icon
+                  i.fa-solid.fa-car-rear
+              div
+                span[style="color: rgba(255, 255, 255, 0.733)"]
+                  | |
+              div
+                span[style="color: white"]
+                  | |
+            div
+              .battery-div
+                span.battery-icon
+                  i.fa-solid.fa-car-battery
+                div
+                  span#battery_voltage
+                    | 12.8 V
+                  br
+                  span#battery_percentage
+                    | 100%
+            .right-line
+      .speedometer
+        .speedometer-numbers
+          .speedometer-item.first
+            | 0
+          .speedometer-item.second
+            | 20
+          .speedometer-item.third
+            | 40
+          .speedometer-item.fourh
+            | 60
+          .speedometer-item.fifth
+            | 80
+          .speedometer-item.sixth
+            | 100
+          .speedometer-item.seventh
+            | 120
+          .speedometer-item.eighth
+            | 140
+          .speedometer-item.ninth
+            | 160
+          .speedometer-item.red.tenth
+            | 180
+          .speedometer-item.red.eleventh
+            | 200
+        .speedometer-pointer
+          .speedometer-pointer-border
+          .speedometer-pointer-box
+        .speedometer-klm
+          span
+            | Km/h
+    .part4
+      .hover-div
+        div
+          span
+            i.fa-solid.fa-flag
+          span
+            | 87269 Km
+        div
+          span.tooltip-text
+            | Total KM
+      .hover-div
+        div
+          span
+            i.fa-solid.fa-flag
+          span
+            | 79 Km
+        div
+          span.tooltip-text
+            | KM Today
+      .hover-div
+        div
+          span
+            i.fa-solid.fa-stopwatch
+          span
+            | 01 h 03 m
+        div
+          span.tooltip-text
+            | Driving Time
+      .hover-div
+        div
+          span
+            i.fa-solid.fa-stopwatch
+          span
+            | 00 h : 02 m
+        div
+          span.tooltip-text
+            | Idle Time
+      .hover-div
+        div
+          span
+            i.fa-solid.fa-stopwatch
+          span
+            | 00 h : 19 m
+        div
+          span.tooltip-text
+            | Stopping Time
+      .hover-div
+        div
+          span
+            i.fa-solid.fa-stopwatch
+          span
+            | 00 h : 30 m
+        div
+          span.tooltip-text
+            | Current Status
+      .hover-div
+        div
+          span
+            i.fa-solid.fa-clock
+          span
+            | 17 : 55
+        div
+          span.tooltip-text
+            | Started Driving
+script[src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer]
