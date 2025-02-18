@@ -125,6 +125,10 @@ body {
     font-size: 2rem;
   }
   
+  .part3 .middle-bottom .gas-div {
+    width: 40px;
+  }
+
   .part3 .middle-bottom .battery-div {
     display: flex;
     justify-content: center;
@@ -168,7 +172,7 @@ body {
     height: 200px;
     transform: rotate(-40deg);
   }
-  
+
   /* tachometer */
   
   .tachometer {
@@ -350,8 +354,8 @@ body {
       #434343,
       #000000
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    animation: rotate 4s alternate infinite ease-in-out;
     transition: all 0.3s ease-out;
+    /* animation: rotate 4s alternate infinite ease-in-out;*/
     transform: rotate(90deg);
   }
   @keyframes rotate {

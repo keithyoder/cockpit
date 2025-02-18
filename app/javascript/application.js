@@ -22,16 +22,20 @@ function updateTime() {
     document.querySelector("#outdoor_temperature").innerHTML = `${data.outdoor_temperature}° C`;
     document.querySelector("#battery_voltage").innerHTML = `${data.battery_voltage}V`;
     document.querySelector("#battery_percentage").innerHTML = `${battery_percentage(data.battery_voltage)}%`;
-    document.querySelector("#fuel_remaining").innerHTML = `${data.fuel_remaining} L`;
+    document.querySelector("#fuel-remaining").innerHTML = `${data.fuel_remaining} L`;
     document.querySelector("#fuel_percentage").innerHTML = `${fuel_percentage(data.fuel_remaining)}%`;
-      // JSON result in `data` variable
-  });
+    document.querySelector(".speedometer-pointer").style.transform = "rotate("+velocity_rotate(data.velocity).toString()+"deg)"
+  })
 }
   
 updateTime();
 setInterval(updateTime, 1000);
   
 // Dynamic Date Function
+
+function velocity_rotate(velocity) {
+  return velocity * 3/2 + 30
+}
 
 function updateDate() {
   let currentDate = new Date();
