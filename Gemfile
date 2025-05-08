@@ -17,7 +17,12 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 gem "slim"
+gem "pg"
 gem "puppeteer-ruby"
+gem "rubyserial"
+gem "nmea_plus"
+gem "uart"
+gem "sidekiq"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"

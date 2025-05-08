@@ -14,3 +14,9 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym "RESTful"
 # end
+ActiveSupport::Inflector.inflections(:en) do |inflect|
+  inflect.acronym "OBD"
+  inflect.acronym "ECU"
+  inflect.acronym "PID"
+  inflect.acronym "GPS"
+end
