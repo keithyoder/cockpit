@@ -20,8 +20,9 @@ gem "slim"
 # gem "pg"
 gem "puppeteer-ruby"
 gem "rubyserial"
-gem "nmea_plus"
-gem "uart"
+# gem "nmea_plus"
+# gem "uart"
+gem "gpsd_client", git: 'https://github.com/keithyoder/gpsd_client'
 gem "sidekiq"
 
 # Use Redis adapter to run Action Cable in production
