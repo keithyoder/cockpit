@@ -20,6 +20,7 @@ gem "slim"
 # gem "pg"
 gem "puppeteer-ruby"
 gem "rubyserial"
+gem "nokogiri",  "~> 1.17.2"
 # gem "nmea_plus"
 # gem "uart"
 gem "gpsd_client", git: 'https://github.com/keithyoder/gpsd_client'
